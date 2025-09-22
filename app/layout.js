@@ -7,9 +7,9 @@ const urbanist = Urbanist({
 });
 
 export const metadata = {
-  title: "Abiola Autos - Car dealers in Nigeria | Luxury and Affordable Cars",
+  title: "Abiola Motors - Car dealers in Nigeria | Luxury and Affordable Cars",
   description:
-    "At Abiola Autos, we pride ourselves as one of the best retail car dealers in Nigeria.",
+    "At Abiola Motors, we pride ourselves as one of the best retail car dealers in Nigeria.",
   keywords: [
     "Car dealers in Nigeria",
     "Buy cars from retailers",
@@ -21,18 +21,18 @@ export const metadata = {
     "Honda Nigeria",
     "Audi Nigeria",
   ],
-  authors: [{ name: "Abiola Autos" }],
+  authors: [{ name: "Abiola Motors" }],
   openGraph: {
-    title: "Abiola Autos - Car dealers in Nigeria",
+    title: "Abiola Motors - Car dealers in Nigeria",
     description: "Luxury and affordable cars for sale in Nigeria.",
-    url: "https://abiolaautos.com",
-    siteName: "Abiola Autos",
+    url: "https://abiolamotors.com",
+    siteName: "Abiola Motors",
     images: [
       {
         url: "/images/Abiola-Motors.jpg",
         width: 1200,
         height: 630,
-        alt: "Luxury retail cars at Abiola Autos",
+        alt: "Luxury retail cars at Abiola Motors",
       },
     ],
     locale: "en_NG",
@@ -53,29 +53,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Structured data (JSON-LD) */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "AutoDealer",
-              name: "Abiola Autos",
-              url: "https://abiolaautos.com",
-              logo: "https://abiolaautos.com/images/Abiola-Motors.jpg",
-              description: "Luxury and affordable car dealers in Nigeria.",
-              address: {
-                "@type": "PostalAddress",
-                addressCountry: "NG",
-              },
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+2349066068147",
-                contactType: "customer service",
-              },
-            }),
-          }}
-        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
