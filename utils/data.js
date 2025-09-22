@@ -1,0 +1,95 @@
+export const cars = [
+  {
+    productId:"1",
+    type: "Toyota",
+    name: "Toyota Corolla",
+    image: [
+      "images/corolla1.jpeg",
+      "images/corolla2.jpeg",
+      "images/corolla3.jpeg",
+    ],
+    price: "5,443,000 Naira",
+    status: "Negotiable",
+  },
+  {
+    productId:"2",
+     type: "Toyota",
+    name: "Toyota Camry",
+    image: [
+      "images/camry1.jpeg",
+      "images/camry2.jpeg",
+      "images/camry3.jpeg",
+    ],
+    price: "5,443,000 Naira",
+    status: "Negotiable",
+  },
+  {
+    productId:"3",
+    type: "Lexus",
+    name: "Lexus R50",
+    image: [
+      "images/Autohead2.jpeg",
+      "images/Autohead2.jpeg",
+      "images/Autohead2.jpeg",
+    ],
+    price: "5,443,000 Naira",
+    status: "Negotiable",
+  },
+  {
+    productId:"4",
+    type: "Lexus",
+    name: "Lexus is350",
+    image: [
+      "images/lexus1.jpeg",
+      "images/lexus2.jpeg",
+    ],
+    price: "5,443,000 Naira",
+    status: "Negotiable",
+  },
+  {
+    productId:"5",
+    type: "Honda",
+    name: "Honda Civic",
+    image: [
+      "images/Honda1.jpeg",
+      "images/Honda2.jpeg",
+    ],
+    price: "5,443,000 Naira",
+    status: "Negotiable",
+  },
+  {
+    productId:"6",
+    type: "Audi",
+    name: "Audi R8",
+    image: [
+      "images/Audi1.jpeg",
+      "images/Audi2.jpeg",
+    ],
+    price: "5,443,000 Naira",
+    status: "Negotiable",
+  },
+  {
+    productId:"7",
+    type: "Lexus",
+    name: "Lexus R50",
+    image: [
+      "images/Autohead2.jpeg",
+      "images/Autohead2.jpeg",
+      "images/Autohead2.jpeg",
+    ],
+    price: "5,443,000 Naira",
+    status: "Negotiable",
+  },
+  {
+    productId:"8",
+    type: "Lexus",
+    name: "Lexus R50",
+    image: [
+      "images/Autohead2.jpeg",
+      "images/Autohead2.jpeg",
+      "images/Autohead2.jpeg",
+    ],
+    price: "5,443,000 Naira",
+    status: "Negotiable",
+  },
+];
