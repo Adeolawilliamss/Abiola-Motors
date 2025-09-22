@@ -22,7 +22,7 @@ export default function Home() {
           <div className="relative mx-auto max-w-screen px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8 lg:pb-24">
             <div className="max-w-xl text-center sm:text-left ">
               <h1
-                className={`text-4xl font-extrabold text-white dark:text-red-500 md:text-5xl`}
+                className={`text-4xl font-extrabold text-red-500 md:text-5xl`}
               >
                 NEW SEASONS ARRIVALS
               </h1>
