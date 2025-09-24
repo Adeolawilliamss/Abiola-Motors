@@ -76,16 +76,27 @@ export default function ItemDetails() {
             <button
               onClick={goPrev}
               aria-label="Previous Image"
-              className="absolute top-1/2 left-3 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full"
+              className="absolute top-1/2 left-3 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
             >
-              ◀
+              <Image
+                src="/images/icon-left.png"
+                width={30}
+                height={30}
+                alt="Previous"
+              />
             </button>
+
             <button
               onClick={goNext}
               aria-label="Next Image"
-              className="absolute top-1/2 right-3 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full"
+              className="absolute top-1/2 right-3 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
             >
-              ▶
+              <Image
+                src="/images/icon-right.png"
+                width={30}
+                height={30}
+                alt="Next"
+              />
             </button>
           </div>
 
@@ -106,7 +117,10 @@ export default function ItemDetails() {
         <div className="flex-1">
           <h2 className="text-3xl font-bold">{car.name}</h2>
           <p className="text-gray-500">{car.type}</p>
-          <p className="text-2xl font-bold text-green-600 mt-3"> ₦ {car.price}</p>
+          <p className="text-2xl font-bold text-green-600 mt-3">
+            {" "}
+            ₦ {car.price}
+          </p>
 
           <span className="inline-block mt-3 bg-red-500 text-white px-4 py-1 rounded-full text-sm">
             {car.status}
@@ -145,9 +159,7 @@ export default function ItemDetails() {
       {/* Recommended products */}
       {recommended.length > 0 && (
         <div className="mt-16">
-          <h3 className="text-2xl font-semibold mb-8">
-            More {car.type}s:
-          </h3>
+          <h3 className="text-2xl font-semibold mb-8">More {car.type}s:</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {recommended.map((rec, idx) => (
               <div
@@ -164,7 +176,10 @@ export default function ItemDetails() {
                 <div className="p-5">
                   <h4 className="text-lg font-semibold">{rec.name}</h4>
                   <p className="text-gray-500">{rec.type}</p>
-                  <p className="text-green-600 font-bold mt-1"> ₦ {rec.price}</p>
+                  <p className="text-green-600 font-bold mt-1">
+                    {" "}
+                    ₦ {rec.price}
+                  </p>
                   <Link href={`/details/${cars.indexOf(rec)}`}>
                     <button className="mt-4 w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 transition">
                       View Details
